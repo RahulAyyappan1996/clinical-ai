@@ -109,9 +109,6 @@ export function ChatPanel({
                 }}
               >
                 <div className="text-sm font-semibold">{example.heading}</div>
-                <div className="text-sm text-zinc-600">
-                  {example.subheading}
-                </div>
               </div>
             ))}
         </div>
