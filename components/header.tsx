@@ -15,6 +15,7 @@ import { SidebarMobile } from './sidebar-mobile'
 import { SidebarToggle } from './sidebar-toggle'
 import { ChatHistory } from './chat-history'
 import { Session } from '@/lib/types'
+import { AvatarIcon, EyeOpenIcon, FaceIcon, HeartFilledIcon, HeartIcon } from '@radix-ui/react-icons'
 
 async function UserOrLogin() {
   const session = (await auth()) as Session
@@ -29,8 +30,8 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/new" rel="nofollow">
-          <IconNextChat className="size-6 mr-2 dark:hidden" inverted />
-          <IconNextChat className="hidden size-6 mr-2 dark:block" />
+          <HeartFilledIcon className="size-6 mr-2 dark:hidden" inverted />
+          <HeartFilledIcon className="hidden size-6 mr-2 dark:block" />
         </Link>
       )}
       <div className="flex items-center">
@@ -39,7 +40,7 @@ async function UserOrLogin() {
           <UserMenu user={session.user} />
         ) : (
           <Button variant="link" asChild className="-ml-2">
-            <Link href="/login">Login</Link>
+            <Link href="/">Clinical AI Chatbot</Link>
           </Button>
         )}
       </div>
@@ -56,7 +57,7 @@ export function Header() {
         </React.Suspense>
       </div>
       <div className="flex items-center justify-end space-x-2">
-        <a
+        {/* <a
           target="_blank"
           href="https://github.com/vercel/nextjs-ai-chatbot/"
           rel="noopener noreferrer"
@@ -64,15 +65,15 @@ export function Header() {
         >
           <IconGitHub />
           <span className="hidden ml-2 md:flex">GitHub</span>
-        </a>
+        </a> */}
         <a
-          href="https://vercel.com/templates/Next.js/nextjs-ai-chatbot"
+          href="https://www.linkedin.com/in/rahulayyappan/"
           target="_blank"
           className={cn(buttonVariants())}
         >
-          <IconVercel className="mr-2" />
-          <span className="hidden sm:block">Deploy to Vercel</span>
-          <span className="sm:hidden">Deploy</span>
+          <AvatarIcon className="mr-2" />
+          <span className="hidden sm:block">Developed by Rahul</span>
+          <span className="sm:hidden">Rahul</span>
         </a>
       </div>
     </header>
