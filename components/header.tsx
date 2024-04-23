@@ -30,7 +30,7 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/new" rel="nofollow">
-          <HeartFilledIcon className="size-6 mr-2 dark:hidden" inverted />
+          <HeartFilledIcon className="size-6 mr-2 dark:hidden"/>
           <HeartFilledIcon className="hidden size-6 mr-2 dark:block" />
         </Link>
       )}
