@@ -60,8 +60,8 @@ export function ChatPanel({
       message: `What are the various phases of a clinical trial?`
     },
     {
-      heading: 'Clinical Research',
-      message: 'Summarize the following article: \n'
+      heading: 'Drug Discovery',
+      message: 'Whay are some of the key concepts in drug discovery? \n'
     },
     {
       heading: 'Good Clinical Practices',

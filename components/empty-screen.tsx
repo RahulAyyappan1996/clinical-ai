@@ -27,7 +27,7 @@ export function EmptyScreen() {
           Welcome to Clinical AI Chatbot!
         </h1>
         <p className="leading-normal text-muted-foreground">
-          This is an open source AI chatbot for clinical research
+          This is an AI assistant designed to assist clinical research
         </p>
         {/* <p className="leading-normal text-muted-foreground">
           It uses{' '}
