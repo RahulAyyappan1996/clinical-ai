@@ -15,7 +15,7 @@ import { SidebarMobile } from './sidebar-mobile'
 import { SidebarToggle } from './sidebar-toggle'
 import { ChatHistory } from './chat-history'
 import { Session } from '@/lib/types'
-import { AvatarIcon, EyeOpenIcon, FaceIcon, HeartFilledIcon, HeartIcon } from '@radix-ui/react-icons'
+import { AccessibilityIcon, AvatarIcon, EyeOpenIcon, FaceIcon, GlobeIcon, HandIcon, HeartFilledIcon, HeartIcon, LinkedInLogoIcon, MagicWandIcon, MaskOnIcon } from '@radix-ui/react-icons'
 
 async function UserOrLogin() {
   const session = (await auth()) as Session
@@ -30,8 +30,8 @@ async function UserOrLogin() {
         </>
       ) : (
         <Link href="/new" rel="nofollow">
-          <HeartFilledIcon className="size-6 mr-2 dark:hidden" inverted />
-          <HeartFilledIcon className="hidden size-6 mr-2 dark:block" />
+          <AccessibilityIcon className="size-6 mr-2 dark:hidden"/>
+          <AccessibilityIcon className="hidden size-6 mr-2 dark:block" />
         </Link>
       )}
       <div className="flex items-center">
@@ -71,9 +71,9 @@ export function Header() {
           target="_blank"
           className={cn(buttonVariants())}
         >
-          <AvatarIcon className="mr-2" />
+          <LinkedInLogoIcon className="mr-2" />
           <span className="hidden sm:block">Developed by Rahul</span>
-          <span className="sm:hidden">Rahul</span>
+          <span className="sm:hidden">Research</span>
         </a>
       </div>
     </header>
